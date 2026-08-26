@@ -17,34 +17,41 @@ html, body {
 header {
     width: 100%;
     height: auto;
-    padding: 5px;
     background-color: rgb(41, 141, 54);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+header p{
+    color:rgb(82, 42, 82);
+    text-align: center;
+    font-weight: bolder;
 }
 
 main {
     width: 100%;
     height: auto;
-    padding: 5px;
     background-color: rgb(204, 104, 104);
     flex: 1;
+    background-image: url(/week-01-website/assets/images/section\ 2.jpg);
+    background-size: cover;
+}
+
+main p{
+    color: rgb(255, 0, 85);
+    text-align: center;
+    font-weight: bolder;
 }
 
 footer {
     width: 100%;
     height: auto;
-    padding: 5px;
     background-color: rgb(112, 106, 194);
     align-content: center;
     justify-content: center;
     display: flex;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-}
-
-a {
-    color: yellow;
-    text-decoration: none;
-    font-weight: bolder;
+    border-top: 1px solid rgb(0, 0, 0);
 }
 
 .links {
@@ -52,6 +59,18 @@ a {
     flex-direction: column;
     gap: 10px;
     margin: 5px;
+}
+
+.links a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.links p{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
 }
 
 h1, h2 {
