@@ -1,3 +1,5 @@
+- GitHub repository URL - https://github.com/ftrofymchuk/Essential-Content.git
+
 ## Planning a Multi-page Website
 
 - Website subject: Gaming and gaming activities 
