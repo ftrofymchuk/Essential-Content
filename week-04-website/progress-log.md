@@ -35,3 +35,45 @@
 | Contact | Activities | Activities page | Pass | None |
 
 ---------------------------------------------------------------------------------------------
+
+# Week 4 Progress Log
+
+## Class 1
+
+### Work completed
+
+- Planned the Gaming World website.
+- Created a four-page website structure.
+- Added consistent navigation between the pages.
+- Added contextual links within the page content.
+- Added clickable email and telephone links to the Contact page.
+- Checked and used relative file paths.
+
+### Pages created
+
+- `index.html`
+- `about.html`
+- `activities.html`
+- `contact.html`
+
+### Tests completed
+
+- Tested the navigation from each page.
+- Tested links between all four pages.
+- Checked that the correct pages opened.
+- Checked browser titles and main headings.
+- Checked relative paths for pages and the stylesheet.
+
+### Problems encountered
+
+- The images folder was initially in the wrong location inside the CSS folder.
+
+### Corrections made
+
+- Moved the images folder to the project root.
+- Corrected the project structure and relative paths.
+- Added useful contextual links and contact links.
+
+### Work still to complete
+
+- Continue developing the website and adding images and styling.
