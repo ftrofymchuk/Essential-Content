@@ -17,6 +17,21 @@
 
 ---------------------------------------------------------------------------------------------
 
+## Navigation testing
 
+| Starting page | Link tested | Expected page | Result | Correction |
+|---|---|---|---|---|
+| Home | About | About page | Pass | None |
+| Home | Activities | Activities page | Pass | None |
+| Home | Contact | Contact page | Pass | None |
+| About | Home | Home page | Pass | None |
+| About | Activities | Activities page | Pass | None |
+| About | Contact | Contact page | Pass | None |
+| Activities | Home | Home page | Pass | None |
+| Activities | About | About page | Pass | None |
+| Activities | Contact | Contact page | Pass | None |
+| Contact | Home | Home page | Pass | None |
+| Contact | About | About page | Pass | None |
+| Contact | Activities | Activities page | Pass | None |
 
 ---------------------------------------------------------------------------------------------
