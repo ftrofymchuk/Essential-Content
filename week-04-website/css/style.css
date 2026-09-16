@@ -38,9 +38,11 @@ nav li {
 nav a {
     color: #9693ce;
     text-decoration: none;
+    padding: 16px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     color: #5c53dd;
     text-decoration: underline;
 }
@@ -79,4 +81,10 @@ h1, p, h2, figcaption {
 
 img {
     border: 0.1px solid rgba(255, 255, 255, 0.507);
+}
+
+.current-page {
+    color: #2d2d2d;
+    font-weight: bold;
+    background-color: #bb64dd;
 }
