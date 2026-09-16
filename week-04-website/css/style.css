@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d2d2d;
+    line-height: 1.6;
+    background-image: url(/week-04-website/images/bodybg.jpg);
+    background-size: cover;
+}
+
+header {
+    padding: 25px;
+    background-image: url(/week-04-website/images/headerbg.avif);
+    background-size: cover;
+}
+
+.site-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+nav {
+    padding: 12px 30px;
+    background-color: #2d2d2d;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #9693ce;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #5c53dd;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.925);
+    padding: 30px 550px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 20px 30px;
+    color: #ffffff;
+    background-color: #2d2d2d;
+}
+
+.footer-text{
+    align-self: center;
+    justify-self: center;
+}
+
+h1, p, h2, figcaption {
+    color: white;
+}
+
+img {
+    border: 0.1px solid rgba(255, 255, 255, 0.507);
+}
