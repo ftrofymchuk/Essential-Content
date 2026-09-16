@@ -79,3 +79,51 @@
 ### Work still to complete
 
 - Continue developing the website and adding images and styling.
+
+---------------------------------------------------------------------------------------------
+
+## Wednesday
+
+### Work completed
+
+- Started adding CSS styling to the existing four-page website.
+- Created and used one shared stylesheet for all four HTML pages.
+- Added styling for the body, header, navigation, main content, sections, images and footer.
+- Added consistent spacing, colours, fonts and layout across all pages.
+- Added images to the website and checked that they displayed correctly.
+- Added alternative text (`alt`) to the images.
+- Added a figure and caption to the images.
+- Added a wide background image to the website header.
+- Added a current-page indicator to the navigation.
+- Used `class="current-page"` and `aria-current="page"` to show which page is currently open.
+- Added hover and focus styling to the navigation links.
+- Checked that the website has a consistent appearance across all four pages.
+
+### Pages updated
+
+- `index.html`
+- `about.html`
+- `activities.html`
+- `contact.html`
+- `css/style.css`
+
+### Tests completed
+
+- Checked that the CSS was applied correctly to all four pages.
+- Checked that the images displayed correctly.
+- Checked that the image alternative text was included.
+- Checked that the figure and caption displayed correctly.
+- Checked the current-page indicator on each page.
+- Checked the navigation links from all four pages.
+- Used the Tab key to check keyboard navigation and visible focus.
+- Checked that the copied project folder continued to work correctly.
+
+### Problems encountered
+
+- The images folder was initially in the wrong location inside the CSS folder.
+
+### Corrections made
+
+- Moved the images folder to the project root.
+- Corrected the image paths.
+- Checked the image links again after moving the folder.
