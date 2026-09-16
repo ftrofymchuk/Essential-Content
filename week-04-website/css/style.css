@@ -3,13 +3,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #2d2d2d;
     line-height: 1.6;
-    background-image: url(/week-04-website/images/bodybg.jpg);
+    background-image: url(images/bodybg.jpg);
     background-size: cover;
 }
 
 header {
     padding: 25px;
-    background-image: url(/week-04-website/images/headerbg.avif);
+    background-image: url(images/headerbg.avif);
     background-size: cover;
 }
 
