@@ -67,6 +67,52 @@
             <figcaption>Gaming headsets help players communicate while gaming online.</figcaption>
         </figure>
 
+        <!-- Creating an input form -->
+        <form action="#" method="">
+            <label for="firstname">Enter your first name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            
+            <label for="surname">Enter your surname </label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Enter your email address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Enter your phone number</label>
+            <inpiut type="tel" id="tel" name="tel" required>
+
+            <label for="message">Type your message here</label>
+            <textarea name="" id="message" cols="30" rows="10" required></textarea>
+
+            <label for="subscribe">Would you like to subscribe to our newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+
+            <fieldset >
+                <legend>Please select contact method</legend>
+
+                <div>
+                    <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="contact-method" id="contact-telephone" value="telephone">
+                    <label for="telephone">Phone</label>
+                </div>
+            
+                <label for="enquiry">Type of equiry</label>
+                <select name="enquiry-type" id="enquiry">
+                    <option value="">Select an enquiry type</option>
+                    <option value="general">General</option>
+                    <option value="visit">Visit</option>
+                    <option value="activities">Activities</option>
+                    <option value="accessability">Accessability</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+
     </main>
 
     <footer>
