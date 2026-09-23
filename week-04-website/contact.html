@@ -21,7 +21,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="activities.html">Activities</a></li>
-            <li><a class="current-page" href="contact.html" aria-current = "page">Contact</a></li>
+            <li><a class="current-page" href="contact.html" aria-current="page">Contact</a></li>
         </ul>
     </nav>
 
@@ -30,22 +30,22 @@
 
         <section>
             <h2>What We Do</h2>
-                <p>
-                    Gaming World provides information about gaming, different types of games
-                    and gaming activities. Our website is designed to help people discover
-                    more about gaming and find activities they may enjoy.
-                    <a href="about.html">Learn more about Gaming World</a>.
-                </p>
+            <p>
+                Gaming World provides information about gaming, different types of games
+                and gaming activities. Our website is designed to help people discover
+                more about gaming and find activities they may enjoy.
+                <a href="about.html">Learn more about Gaming World</a>.
+            </p>
         </section>
 
         <section>
             <h2>Gaming Activities</h2>
-                <p>
-                    Gaming can include many different activities, from playing video games
-                    and exploring new games to taking part in challenges and playing with
-                    friends. Explore our <a href="activities.html">gaming activities</a>
-                    to find something you may enjoy.
-                </p>
+            <p>
+                Gaming can include many different activities, from playing video games
+                and exploring new games to taking part in challenges and playing with
+                friends. Explore our <a href="activities.html">gaming activities</a>
+                to find something you may enjoy.
+            </p>
         </section>
 
         <section>
@@ -69,48 +69,68 @@
 
         <!-- Creating an input form -->
         <form action="#" method="">
-            <label for="firstname">Enter your first name</label>
-            <input type="text" id="firstname" name="firstname" required>
-            
-            <label for="surname">Enter your surname </label>
-            <input type="text" id="surname" name="surname" required>
+            <h2>Contact Form</h2>
 
-            <label for="email">Enter your email address</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="tel">Enter your phone number</label>
-            <inpiut type="tel" id="tel" name="tel" required>
-
-            <label for="message">Type your message here</label>
-            <textarea name="" id="message" cols="30" rows="10" required></textarea>
-
-            <label for="subscribe">Would you like to subscribe to our newsletter</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
-
-            <fieldset >
-                <legend>Please select contact method</legend>
+            <div class="fullname">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" minlength="2" maxlength="20" required>
+                </div>
 
                 <div>
+                    <label for="surname">Surname </label>
+                    <input type="text" id="surname" name="surname" pattern="[A-Z]{2}[0-9]{4}" minlength="2" maxlength="20" required>
+                </div>
+            </div>
+
+            <div class="contactinfo">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="telephone">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+            </div>
+
+            <div class="message-box">
+                <label for="message">Comment</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <div class="subscribe-check">
+                <label for="subscribe">Would you like to subscribe to our newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+
+            <fieldset>
+                <legend>Please select contact method</legend>
+
+                <div class="email-field">
                     <input type="radio" id="contact-email" name="contact-method" value="email" required>
                     <label for="email">Email</label>
                 </div>
 
-                <div>
+                <div class="phone-field">
                     <input type="radio" name="contact-method" id="contact-telephone" value="telephone">
                     <label for="telephone">Phone</label>
                 </div>
-            
-                <label for="enquiry">Type of equiry</label>
-                <select name="enquiry-type" id="enquiry">
-                    <option value="">Select an enquiry type</option>
-                    <option value="general">General</option>
-                    <option value="visit">Visit</option>
-                    <option value="activities">Activities</option>
-                    <option value="accessability">Accessability</option>
-                </select>
+
+                <div class="equiry-field">
+                    <label for="enquiry">Type of equiry</label>
+                    <select name="enquiry-type" id="enquiry">
+                        <option value="">Select an enquiry type</option>
+                        <option value="general">General</option>
+                        <option value="visit">Visit</option>
+                        <option value="activities">Activities</option>
+                        <option value="accessability">Accessability</option>
+                    </select>
+                </div>
             </fieldset>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="submit-button">
         </form>
 
     </main>

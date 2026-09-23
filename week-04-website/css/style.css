@@ -97,3 +97,96 @@ form {
     justify-content: center;
     margin-top: 20px;
 }
+
+.contact {
+    width: 100%;
+    display: flex;
+}
+
+.fullname {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.fullname div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactinfo {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.contactinfo div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-field{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.phone-field{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.equiry-field {
+    display: flex;
+    margin: 15px 0;
+}
+
+fieldset {
+    margin: 15px;
+}
+
+.submit-button{
+    width: 100px;
+    color: blueviolet;
+    border-radius: 15px;
+    padding: 5px 0;
+    font-weight: 700;
+}
+
+input {
+    padding: 5px 0 0 0;
+}
+
+input:focus, input:target, input:hover{
+    border: 0.1px solid violet;
+}
+
+textarea:focus, textarea:target, textarea:hover{
+    border: 0.1px solid violet;
+}
+
+input[type="radio"]{
+    accent-color: blueviolet;
+    margin: 0 5px;
+}
+
+select{
+    color: blueviolet;
+    background-color:rgb(32, 7, 56);
+    font-weight:700;
+    margin: 0 10px;
+}
