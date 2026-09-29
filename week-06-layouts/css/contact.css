@@ -1,0 +1,88 @@
+/* Apply border-box sizing so padding stays inside set widths. */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the default page font, colours and line spacing. */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352b;
+    background-color: #fffdf7;
+    line-height: 1.6;
+}
+
+/* Remove the default top margin from headings. */
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+/* Keep images inside their containers. */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Style the header across the top of the page. */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8dfd9;
+}
+
+/* Limit the header width and place its children in a row. */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+/* Style the linked website name. */
+.site-name {
+    color: #285b37;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Display navigation items in a horizontal row. */
+.nav-list {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style every navigation link. */
+.nav-list a {
+    display: block;
+    padding: 8px 12px;
+    color: #26352b;
+    text-decoration: none;
+}
+
+/* Show interaction and identify the current page. */
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list .current-page {
+    color: #ffffff;
+    background-color: #285b37;
+}
+
+/* Style the footer. */
+.site-footer {
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1e2e23;
+}
+
+.site-footer p {
+    margin: 0;
+}
