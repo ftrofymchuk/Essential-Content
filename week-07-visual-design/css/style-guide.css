@@ -1,0 +1,160 @@
+/*
+    Week 7 CSS style guide
+    Name: Filip Trofymchuk
+    Date: 06/10/2026
+*/
+
+/* ==================================================
+   FARM CAFÉ STYLE GUIDE
+   Complete each section during the Class 1 practical.
+   ================================================== */
+
+/* 1. CUSTOM PROPERTIES
+   Add your colour, typography, spacing, border-radius
+   and content-width variables inside :root.
+
+   Suggested names:
+   --colour-primary
+   --colour-primary-dark
+   --colour-accent
+   --colour-background
+   --colour-surface
+   --colour-text
+   --colour-text-light
+   --colour-border
+   --font-body
+   --font-heading
+   --space-small
+   --space-medium
+   --space-large
+   --radius-small
+   --radius-large
+   --content-width
+*/
+
+:root {
+    /* Add your custom properties here. */
+    /* Colours */
+    --colour-primary: #E5B9B2;
+    --colour-primary-dark: #2B1B1A;
+    --colour-accent: #C97B7B;
+    --colour-background: #7A4A45;
+    --colour-surface: #F6E7E3;
+    --colour-text: #2B1B1A;
+    --colour-text-light: #F6E7E3;
+    --colour-border: #C97B7B ;
+
+    /* Typography */
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+    --text-small: 0.875rem;
+    --text-body: 1rem;
+    --text-heading-small: 1.25rem;
+    --text-heading-medium: 1.75rem;
+    --text-heading-large: 2.5rem;
+
+    /* Spacing */
+   --space-small: 0.75rem;
+   --space-medium: 1.5rem;
+   --space-large: 2rem;
+   --space-x-large: 3rem;
+
+    /* Components */
+   --radius-small: 4px;
+   --radius-card: 8px;
+   --content-width: 1150px;
+}
+
+/* 2. SMALL RESET
+   Apply box-sizing and remove unwanted default margins. */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+/* 3. GLOBAL STYLES
+   Style the body, headings, paragraphs and links.
+   Aim for readable text and clear colour contrast. */
+
+body{
+   font-family: var(--font-body);
+   font-size: var(--text-body);
+   background-color: var(--colour-background);
+}
+
+h1,
+h2,
+h3 {
+   font-family: var(--font-heading);
+}
+
+h1 {
+   font-size: var(--text-heading-large);
+}
+
+a{
+   text-decoration: none;
+}
+
+/* 4. SHARED CONTAINER
+   Limit the content width and centre it on the page. */
+
+
+/* 5. PAGE HEADER AND FOOTER
+   Create a clear beginning and end to the page. */
+
+
+/* 6. CONTENT SECTIONS
+   Use spacing to separate related groups of content. */
+
+
+/* 7. COLOUR PALETTE
+   Create a responsive layout for the swatches.
+   Give each .swatch-preview the appropriate background. */
+
+
+/* 8. TYPOGRAPHY SAMPLES
+   Make the hierarchy between headings, body text and
+   supporting text easy to recognise. */
+
+
+/* 9. SPACING SCALE
+   Use your spacing variables to make the three samples
+   visibly different. */
+
+
+/* 10. BUTTONS
+   Create shared .button styling first, then make primary
+   and secondary variations. Remember hover and focus. */
+
+.button-primary {
+   background-color: var(--colour-primary);
+   text-decoration: none;
+   color: var(--colour-text);
+   border: 1px solid var(--colour-surface);
+   border-radius: var(--radius-small);
+   padding: var(--space-small);
+}
+
+.button-primary:hover{
+   color: var(--colour-text-light);
+}
+
+.button-secondary {
+   background-color: var(--colour-primary-dark);
+   color: var(--colour-text-light);
+   text-decoration: none;
+   border: 1px solid var(--colour-surface);
+   border-radius: var(--radius-small);
+   padding: var(--space-small);
+
+}
+
+/* 11. REUSABLE COMPONENTS
+   Style the card and notice using your visual system. */
+
+
+/* 12. RESPONSIVE ADJUSTMENTS
+   Add a media query only if the layout needs it. */
+

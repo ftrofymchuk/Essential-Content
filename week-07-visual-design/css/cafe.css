@@ -1,0 +1,65 @@
+/* ==================================================
+   FARM CAFÉ PAGE
+   This page will be styled after the style guide has
+   been completed. Reuse the same visual decisions.
+   ================================================== */
+
+/* 1. CUSTOM PROPERTIES
+   Copy the finished custom properties from
+   style-guide.css so both pages use the same system. */
+
+:root {
+    /* Add the completed custom properties here. */
+}
+
+/* 2. SMALL RESET */
+
+
+/* 3. GLOBAL STYLES
+   Apply the chosen background, text and type styles. */
+
+
+/* 4. SHARED CONTAINER */
+
+
+/* 5. HEADER AND NAVIGATION
+   Use Flexbox where appropriate. Include visible hover
+   and keyboard-focus states for links. */
+
+
+/* 6. HERO SECTION
+   Create a strong introduction and clear call to action. */
+
+
+/* 7. SHARED SECTION STYLES */
+
+
+/* 8. CAFÉ INFORMATION LAYOUT */
+
+
+/* 9. MENU CARD LAYOUT
+   Use Grid to arrange the menu cards. */
+
+
+/* 10. ALLERGY NOTICE
+   Make important information easy to find without
+   relying on colour alone. */
+
+
+/* 11. OPENING INFORMATION */
+
+
+/* 12. BOOKING CALL TO ACTION */
+
+
+/* 13. FOOTER */
+
+
+/* 14. BUTTONS
+   Reuse the button design from the style guide. */
+
+
+/* 15. RESPONSIVE ADJUSTMENTS
+   Start with the small-screen layout, then add a media
+   query for layouts that need more horizontal space. */
+
