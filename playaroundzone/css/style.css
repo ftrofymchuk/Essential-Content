@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #D8CBE8;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 956px;
+}
+
+#video-background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+
+.title{
+    font-weight: bold;
+    position:sticky;
+    color: #c3a7e9bb;
+}
+
+form label{
+    margin: 25px 0;
+    color: #e5d9f2b4;
+    font-weight: bold;
+}
+
+form button{
+    margin: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 10px 1px #d8cbe8d5;
+}
+
+form button:hover{
+    margin: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 10px 1px #5e0fbe9d;
+}
+
+.blur {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 10px 1px #d8cbe8d5;
+}
