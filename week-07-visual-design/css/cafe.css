@@ -10,56 +10,317 @@
 
 :root {
     /* Add the completed custom properties here. */
+    --colour-primary: #7A4A45;
+    --colour-primary-dark: #2B1B1A;
+    --colour-accent: #C97B7B;
+    --colour-background: #E5B9B2;
+    --colour-surface: #F6E7E3;
+    --colour-text: #2B1B1A;
+    --colour-text-light: #F6E7E3;
+    --colour-border: #2B1B1A ;
+    --colour-border-light: #eeeae4;
+
+    /* Typography */
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+    --text-small: 0.875rem;
+    --text-body: 1rem;
+    --text-heading-small: 1.25rem;
+    --text-heading-medium: 1.75rem;
+    --text-heading-large: 2.5rem;
+
+    /* Spacing */
+   --space-small: 0.75rem;
+   --space-medium: 1.5rem;
+   --space-large: 2rem;
+   --space-x-large: 3rem;
+
+    /* Components */
+   --radius-small: 4px;
+   --radius-card: 8px;
+   --content-width: 1150px;
 }
 
 /* 2. SMALL RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
 
 
 /* 3. GLOBAL STYLES
    Apply the chosen background, text and type styles. */
 
+body {
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: var(--colour-background);
+    color: var(--colour-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--colour-primary-dark);
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: var(--space-small);
+    font-size: 3rem;
+}
+
+h2 {
+    margin-bottom: var(--space-small);
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin-bottom: var(--space-small);
+    font-size: 1.35rem;
+}
+
+h4 {
+    margin-bottom: var(--space-small);
+    font-size: 1.15rem;
+}
+
+p {
+    margin-bottom: var(--space-medium);
+}
+
+a {
+    color: var(--colour-primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--colour-primary);
+}
+
+ul{
+   list-style-type: none;
+}
 
 /* 4. SHARED CONTAINER */
 
+.container {
+    min-width: 100%;
+    max-width: var(--content-width);
+    margin: auto;
+}
 
 /* 5. HEADER AND NAVIGATION
    Use Flexbox where appropriate. Include visible hover
    and keyboard-focus states for links. */
+
+.site-header {
+   margin: 0;
+   border-bottom: 1px solid var(--colour-primary);
+}
+
+.site-name{
+   font-size: var(--text-heading-medium);
+}
+
+.nav-list {
+   display: flex;
+   flex-direction: row;
+   gap: var(--space-medium);
+   font-size: var(--text-body);
+}
 
 
 /* 6. HERO SECTION
    Create a strong introduction and clear call to action. */
 
 
+
+.hero-content {
+   display: grid;
+   grid-template-columns: 1.1fr 0.9fr;
+   align-items: center;
+   gap: 48px;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 72px 24px;
+   border-bottom: 1px solid var(--colour-border);
+   margin-bottom: 74px;
+}
+
+.hero-content p{
+   font-weight: bold;
+}
+
+.cafe-hero{
+   display: flex;
+}
+
 /* 7. SHARED SECTION STYLES */
 
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 24px 70px;
+}
 
 /* 8. CAFÉ INFORMATION LAYOUT */
 
+.eyebrow {
+    color: var(--colour-primary);
+    font-size: var(--text-heading-small);
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+section#about{
+   border-bottom: 1px solid var(--colour-border);
+   margin-bottom: 74px;
+}
+
+section#visit{
+   border-bottom: 1px solid var(--colour-border);
+   margin-bottom: 74px;
+}
 
 /* 9. MENU CARD LAYOUT
    Use Grid to arrange the menu cards. */
 
+.menu-grid{
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.menu-card{
+   border: 1px solid var(--colour-border);
+   padding: 10px;
+   margin: 10px;
+   background-color: var(--colour-primary-dark);
+   border-radius: var(--radius-card);
+}
+
+.menu-card p, h3{
+   color: var(--colour-text-light);
+}
+
+.menu-section {
+   border-bottom: 1px solid var(--colour-border);
+   margin-bottom: 74px;
+}
 
 /* 10. ALLERGY NOTICE
    Make important information easy to find without
    relying on colour alone. */
 
+.allergy-notice{
+    background-color: var(--colour-accent);
+    padding: 10px 15px;
+    border: 1px solid var(--colour-border);
+    margin: 10px;
+    border-radius: var(--radius-small);
+   border-bottom: 1px solid var(--colour-border);
+   margin-bottom: 74px;
+}
 
 /* 11. OPENING INFORMATION */
 
+.opening-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 30px;
+    color: #ffffff;
+    background-color: var(--colour-primary-dark);
+    border-radius: var(--radius-small);
+    border: 1px solid var(--colour-border-light);
+}
 
 /* 12. BOOKING CALL TO ACTION */
 
+.callout-layout{
+    background-color: var(--colour-surface);
+    border: 1px solid black;
+    border-radius: var(--radius-small);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* 13. FOOTER */
 
+footer {
+   display: grid;
+   margin: 0;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   border-top: 1px solid var(--colour-primary);
+   padding: 24px;
+}
 
 /* 14. BUTTONS
    Reuse the button design from the style guide. */
 
+.button-primary {
+   background-color: var(--colour-surface);
+   text-decoration: none;
+   border: 1.5px solid var(--colour-border);
+   border-radius: var(--radius-small);
+   padding: var(--space-small);
+}
+
+.button-primary:hover{
+   color: var(--colour-primary);
+}
+
+.button-secondary {
+   background-color: var(--colour-accent);
+   color: var(--colour-text);
+   text-decoration: none;
+   border: 1.5px solid var(--colour-border);
+   border-radius: var(--radius-small);
+   padding: var(--space-small);
+}
+
+.button-secondary:hover {
+   color: var(--colour-text-light);
+}
 
 /* 15. RESPONSIVE ADJUSTMENTS
    Start with the small-screen layout, then add a media
    query for layouts that need more horizontal space. */
 
+@media (min-width: 48rem) {
+    .page-header {
+        padding-block: 4.5rem;
+    }
+
+    .spacing-demo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

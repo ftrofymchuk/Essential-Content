@@ -1,0 +1,455 @@
+/* ==========================================================
+   FARM CAFÉ — COMPLETED STYLE GUIDE EXAMPLE
+
+   This stylesheet matches the supplied style-guide.html file.
+   It demonstrates:
+   - CSS custom properties
+   - colour and typography choices
+   - a consistent spacing scale
+   - reusable buttons, cards and notices
+   - Grid and Flexbox layouts
+   - hover and keyboard-focus states
+   - a simple responsive adjustment
+   ========================================================== */
+
+
+/* ==========================================================
+   1. CUSTOM PROPERTIES
+
+   Custom properties store repeated design values in one place.
+   Changing a value here updates every rule that uses it.
+   ========================================================== */
+
+:root {
+    /* Colour palette */
+    --colour-primary: #47663b;
+    --colour-primary-dark: #2f4727;
+    --colour-accent: #e3ad36;
+    --colour-background: #f6f1e7;
+    --colour-surface: #ffffff;
+    --colour-text: #292b27;
+    --colour-text-light: #62665e;
+    --colour-border: #d7cfbf;
+
+    /* Typography */
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+
+    /* Spacing scale */
+    --space-small: 0.75rem;
+    --space-medium: 1.5rem;
+    --space-large: 3rem;
+
+    /* Reusable sizes */
+    --radius-small: 0.35rem;
+    --radius-large: 0.75rem;
+    --content-width: 70rem;
+}
+
+
+/* ==========================================================
+   2. SMALL RESET
+
+   border-box keeps declared widths predictable because padding
+   and borders are included within an element's total width.
+   ========================================================== */
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+
+/* ==========================================================
+   3. GLOBAL STYLES
+
+   The body sets the default font, colours and line spacing.
+   Individual elements inherit these values unless overridden.
+   ========================================================== */
+
+body {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--colour-background);
+    color: var(--colour-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--colour-primary-dark);
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: var(--space-small);
+    font-size: 3rem;
+}
+
+h2 {
+    margin-bottom: var(--space-small);
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin-bottom: var(--space-small);
+    font-size: 1.35rem;
+}
+
+h4 {
+    margin-bottom: var(--space-small);
+    font-size: 1.15rem;
+}
+
+p {
+    margin-bottom: var(--space-medium);
+}
+
+a {
+    color: var(--colour-primary-dark);
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--colour-primary);
+}
+
+/* A visible focus indicator helps keyboard users see which
+   interactive element is currently selected. */
+a:focus-visible {
+    outline: 0.2rem solid var(--colour-accent);
+    outline-offset: 0.25rem;
+}
+
+
+/* ==========================================================
+   4. SHARED CONTAINER
+
+   The container limits long lines and centres the content.
+   The horizontal padding prevents content touching screen edges.
+   ========================================================== */
+
+.container {
+    min-width: 100%;
+    max-width: var(--content-width);
+    margin: auto;
+}
+
+
+/* ==========================================================
+   5. PAGE HEADER AND FOOTER
+   ========================================================== */
+
+.page-header {
+    padding: var(--space-large);
+    background-color: var(--colour-primary-dark);
+    color: var(--colour-surface);
+    border-bottom: 0.5rem solid var(--colour-accent);
+}
+
+.page-header h1 {
+    color: var(--colour-surface);
+}
+
+.page-header p:last-child {
+    max-width: 55ch;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+
+.page-footer {
+    padding: var(--space-medium);
+    background-color: var(--colour-primary-dark);
+    color: var(--colour-surface);
+    text-align: center;
+}
+
+.page-footer p {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   6. CONTENT SECTIONS
+
+   A border and generous spacing separate each topic without
+   requiring a different background colour for every section.
+   ========================================================== */
+
+main > section {
+    padding-block: var(--space-large);
+    border-bottom: 0.1rem solid var(--colour-border);
+}
+
+main > section:last-child {
+    border-bottom: 0;
+}
+
+.eyebrow {
+    margin-bottom: 0.4rem;
+    color: var(--colour-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   7. COLOUR PALETTE
+
+   auto-fit creates as many columns as will comfortably fit.
+   Each card is at least 12rem wide and can expand when space
+   is available.
+   ========================================================== */
+
+.colour-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    gap: var(--space-medium);
+    margin-top: var(--space-medium);
+}
+
+.colour-swatch {
+    overflow: hidden;
+    background-color: var(--colour-surface);
+    border: 0.1rem solid var(--colour-border);
+    border-radius: var(--radius-large);
+}
+
+.colour-swatch h3,
+.colour-swatch p {
+    margin: var(--space-medium);
+}
+
+.colour-swatch h3 {
+    margin-top: var(--space-medium);
+}
+
+.colour-swatch p {
+    color: var(--colour-text-light);
+}
+
+.swatch-preview {
+    min-height: 7rem;
+    border-bottom: 0.1rem solid var(--colour-border);
+}
+
+/* Each swatch uses one of the variables defined in :root. */
+.swatch-primary .swatch-preview {
+    background-color: var(--colour-primary);
+}
+
+.swatch-primary-dark .swatch-preview {
+    background-color: var(--colour-primary-dark);
+}
+
+.swatch-accent .swatch-preview {
+    background-color: var(--colour-accent);
+}
+
+.swatch-background .swatch-preview {
+    background-color: var(--colour-background);
+}
+
+.swatch-surface .swatch-preview {
+    background-color: var(--colour-surface);
+}
+
+.swatch-text .swatch-preview {
+    background-color: var(--colour-text);
+}
+
+
+/* ==========================================================
+   8. TYPOGRAPHY SAMPLES
+
+   The maximum width keeps longer lines comfortable to read.
+   ========================================================== */
+
+.type-samples {
+    max-width: 65ch;
+    padding: var(--space-medium);
+    background-color: var(--colour-surface);
+    border-left: 0.4rem solid var(--colour-accent);
+    border-radius: var(--radius-small);
+}
+
+.supporting-text {
+    color: var(--colour-text-light);
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================
+   9. SPACING SCALE
+
+   Each example uses the matching variable as its padding.
+   ========================================================== */
+
+.spacing-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-medium);
+}
+
+.space-sample {
+    background-color: var(--colour-primary);
+    color: var(--colour-surface);
+    border-radius: var(--radius-small);
+    font-weight: 700;
+}
+
+.space-small {
+    padding: var(--space-small);
+}
+
+.space-medium {
+    padding: var(--space-medium);
+}
+
+.space-large {
+    padding: var(--space-large);
+}
+
+
+/* ==========================================================
+   10. BUTTONS
+
+   Shared properties belong to .button. Modifier classes then
+   change the appearance of the primary and secondary versions.
+   ========================================================== */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-small);
+    margin-bottom: var(--space-large);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 0.15rem solid var(--colour-primary-dark);
+    border-radius: var(--radius-small);
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-0.1rem);
+}
+
+.button-primary {
+    background-color: var(--colour-primary-dark);
+    color: var(--colour-surface);
+}
+
+.button-primary:hover {
+    background-color: var(--colour-primary);
+    color: var(--colour-surface);
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--colour-primary-dark);
+}
+
+.button-secondary:hover {
+    background-color: var(--colour-primary-dark);
+    color: var(--colour-surface);
+}
+
+
+/* ==========================================================
+   11. REUSABLE COMPONENTS
+   ========================================================== */
+
+.style-card {
+    max-width: 30rem;
+    margin-bottom: var(--space-large);
+    padding: var(--space-medium);
+    background-color: var(--colour-surface);
+    border: 0.1rem solid var(--colour-border);
+    border-radius: var(--radius-large);
+    box-shadow: 0 0.5rem 1.25rem rgb(41, 43, 39);
+}
+
+.style-card p:last-of-type {
+    color: var(--colour-text-light);
+}
+
+.notice {
+    max-width: 45rem;
+    padding: var(--space-medium);
+    background-color: #fff7dc;
+    border: 0.1rem solid var(--colour-accent);
+    border-left: 0.5rem solid var(--colour-accent);
+    border-radius: var(--radius-small);
+}
+
+.notice h4 {
+    margin-bottom: var(--space-small);
+}
+
+.notice p {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   12. RESPONSIVE ADJUSTMENTS
+
+   The page is mobile-first. This query only changes elements
+   when there is enough width to benefit from a larger layout.
+   ========================================================== */
+
+@media (min-width: 48rem) {
+    .page-header {
+        padding-block: 4.5rem;
+    }
+
+    .spacing-demo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+
+/* ==========================================================
+   13. REDUCED MOTION
+
+   This accessibility preference removes the button movement
+   for users who have asked their device to reduce animation.
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .button {
+        transition: none;
+    }
+
+    .button:hover {
+        transform: none;
+    }
+}
