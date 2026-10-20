@@ -26,12 +26,12 @@ form {
 .title{
     font-weight: bold;
     position:sticky;
-    color: #c3a7e9bb;
+    color: #f7da9dbb;
 }
 
 form label{
     margin: 25px 0;
-    color: #e5d9f2b4;
+    color: #beaaf7b4;
     font-weight: bold;
 }
 
@@ -69,4 +69,9 @@ form button:hover{
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: inset 0px 0px 10px 1px #d8cbe8d5;
+}
+
+video {
+    max-width:1980px;
+    min-width: 780px;
 }

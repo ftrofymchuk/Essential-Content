@@ -1,0 +1,148 @@
+/* ==========================================================
+   NORTH COAST ADVENTURES — WEEK 8 STARTER STYLESHEET
+
+   The HTML and written content are complete.
+   Work through these sections in order to create the layout.
+   Use the Week 8 teaching pages as a reference.
+   ========================================================== */
+
+
+/* 1. CUSTOM PROPERTIES
+   These values provide a shared visual system for both pages. */
+
+:root {
+    --colour-primary: #d86b32;
+    --colour-primary-dark: #a9471c;
+    --colour-dark: #1f2e2b;
+    --colour-text: #28312f;
+    --colour-text-light: #5f6966;
+    --colour-background: #f7f4ee;
+    --colour-background-alt: #ece7dc;
+    --colour-surface: #ffffff;
+    --colour-light: #ffffff;
+    --colour-border: #d8d2c8;
+
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+
+    --space-small: 0.75rem;
+    --space-medium: 1.5rem;
+    --space-large: 3rem;
+
+    --radius-small: 0.35rem;
+    --radius-large: 0.75rem;
+
+    --content-width: 75rem;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   background-color: var(--colour-background);
+   color: var(--colour-text);
+   font-family: var(--font-body);
+   font-size: 1rem;
+   line-height: 1.6;
+}
+
+.activity-list {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.container {
+   width: 90%;
+   max-width: 75rem;
+   margin-inline: auto;
+}
+
+.about {
+   padding-block: 3rem;
+}
+
+.about-layout{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.about-image img {
+   width: 100%;
+   border-radius: 0.75rem;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* header */
+
+.site-header {
+   padding-block: 1rem;
+   background-color: var(--colour-dark);
+}
+
+@media (max-width: 768px){
+   .activity-list {
+      flex-direction: row;
+   }
+
+   .about-layout {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .about-image,
+   .about-content {
+      flex: 1;
+   }
+}
+
+/*Mobile layout*/
+
+.about {
+   padding-block: 3rem;
+}
+
+.about-layout{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.about-image img{
+   width: 100%;
+   border-radius: 0.75rem;
+}
+
+/* Larger-screen layout */
+
+@media (min-width: 48rem) {
+    .about-layout {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-image,
+    .about-content {
+        flex: 1;
+    }
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 64rem) {
+    .contact-layout {
+        grid-template-columns: 1fr 2fr;
+    }
+}
