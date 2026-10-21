@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact North Coast Adventures about a guided outdoor experience in Scotland.">
+    <title>Contact | North Coast Adventures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Site header -->
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="site-name" href="index.html">North Coast Adventures</a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#activities">Activities</a></li>
+                    <li><a aria-current="page" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page introduction -->
+        <section class="page-banner">
+            <div class="container">
+                <p class="eyebrow">Contact Us</p>
+                <h1>Plan Your Next Adventure</h1>
+                <p>Tell us about your preferred activity, group and dates. We will reply with suitable options.</p>
+            </div>
+        </section>
+
+        <!-- Contact information, map and enquiry form -->
+        <section class="contact-section section">
+            <div class="container contact-layout">
+                <!-- Left column: contact details and map -->
+                <div class="contact-sidebar">
+                    <aside class="contact-details">
+                        <p class="eyebrow">Get in Touch</p>
+                        <h2>Contact Details</h2>
+                        <p>Our team is happy to answer questions before you book.</p>
+
+                        <address>
+                            <p>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <span>14 Harbour Road<br>Oban, PA34 4DB</span>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+441631555012">01631 555 012</a>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:hello@northcoastadventures.example">hello@northcoastadventures.example</a>
+                            </p>
+                        </address>
+
+                        <div class="opening-times">
+                            <h3><i class="fa-regular fa-clock" aria-hidden="true"></i> Office Hours</h3>
+                            <p>Monday–Friday: 09:00–17:00</p>
+                            <p>Saturday: 09:00–13:00</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </aside>
+
+                    <!-- Embedded map replaces the original contact image -->
+                    <div class="contact-map">
+                        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-5.495%2C56.405%2C-5.445%2C56.430&amp;layer=mapnik" title="Map showing the North Coast Adventures office in Oban" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Right column: enquiry form -->
+                <div class="form-panel">
+                    <p class="eyebrow">Enquiry Form</p>
+                    <h2>Tell Us What You Are Planning</h2>
+                    <p>Fields marked with an asterisk are required.</p>
+
+                    <form class="enquiry-form" action="#" method="post">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="first-name">First name *</label>
+                                <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="last-name">Last name *</label>
+                                <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email address *</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telephone">Telephone number</label>
+                                <input id="telephone" name="telephone" type="tel" autocomplete="tel">
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="activity">Activity</label>
+                                <select id="activity" name="activity">
+                                    <option value="">Select an activity</option>
+                                    <option value="hillwalking">Guided hillwalking</option>
+                                    <option value="kayaking">Loch kayaking</option>
+                                    <option value="cycling">Mountain biking</option>
+                                    <option value="other">Another activity</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="group-size">Number of people</label>
+                                <input id="group-size" name="group-size" type="number" min="1" max="20">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-date">Preferred date</label>
+                                <input id="preferred-date" name="preferred-date" type="date">
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="message">Tell us about your enquiry *</label>
+                                <textarea id="message" name="message" rows="7" required></textarea>
+                            </div>
+
+                            <div class="form-group form-group-full checkbox-group">
+                                <input id="updates" name="updates" type="checkbox">
+                                <label for="updates">Send me occasional news about future experiences.</label>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <button class="button button-primary" type="submit">Send Enquiry</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supporting image and travel information -->
+        <section class="visit-section section">
+            <div class="container visit-layout">
+                <div class="visit-image">
+                    <img src="images/about.jpg" alt="Walkers enjoying the Scottish coastal landscape">
+                </div>
+
+                <div class="visit-content">
+                    <p class="eyebrow">Finding Us</p>
+                    <h2>Before You Visit</h2>
+                    <p>Our Oban office is a short walk from the railway station and ferry terminal. Please arrange an appointment before visiting so a member of the team is available to help.</p>
+
+                    <ul class="travel-list">
+                        <li><i class="fa-solid fa-car" aria-hidden="true"></i><span>Public parking is available nearby.</span></li>
+                        <li><i class="fa-solid fa-train" aria-hidden="true"></i><span>Oban railway station is approximately ten minutes away on foot.</span></li>
+                        <li><i class="fa-solid fa-person-walking" aria-hidden="true"></i><span>Please contact us before visiting if you require step-free access.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <p>&copy; 2026 North Coast Adventures</p>
+            <p>Guided outdoor experiences in Scotland</p>
+        </div>
+    </footer>
+</body>
+</html>
