@@ -818,4 +818,15 @@ textarea {
     }
 }
 
+.error-message {
+    min-height: 24px;
+    margin: 0;
+    color: #a12622;
+    font-size: 14px;
+    font-weight: bold;
+}
 
+.input-error {
+    border-color: #a12622;
+    background-color: #fff4f3;
+}

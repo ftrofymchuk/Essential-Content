@@ -26,12 +26,12 @@ form {
 .title{
     font-weight: bold;
     position:sticky;
-    color: #f7da9dbb;
+    color: #4b4230bb;
 }
 
 form label{
     margin: 25px 0;
-    color: #beaaf7b4;
+    color: #180c3db4;
     font-weight: bold;
 }
 
