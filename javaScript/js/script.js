@@ -85,6 +85,12 @@ function increaseCount() {
     visitorCount.textContent = count;
 }
 
+function decreaseCount(){
+    count = count - 1;
+
+    visitorCount.textContent = count;
+}
+
 countButton.addEventListener("click", increaseCount)
 
 const resetButton = document.querySelector("#reset-button");
