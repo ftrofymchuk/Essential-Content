@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="practice-card">
+        <h2>1. Change Text</h2>
+
+        <p id="adventure-message">
+            Select the button to reveal a new message.
+        </p>
+
+        <button
+            class="practice-button"
+            id="message-button"
+            type="button"
+        >
+            Change Message
+        </button>
+    </section>
+
+    <section class="practice-card" id="colour-card">
+        <h2>2. Change a Colour</h2>
+
+        <p>
+            Select the button to change the background
+            colour of this section.
+        </p>
+
+        <button
+            class="practice-button"
+            id="colour-button"
+            type="button"
+        >
+            Change Background
+        </button>
+    </section>
+
+    <section class="practice-card">
+        <h2>3. Show or Hide Information</h2>
+
+        <button
+            class="practice-button"
+            id="details-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="activity-details"
+        >
+            Show Details
+        </button>
+
+        <div
+            id="activity-details"
+            class="activity-details hidden"
+        >
+            <h3>Guided Hillwalking</h3>
+
+            <p>
+                Our guided walks are suitable for beginners.
+                Safety equipment and instruction are included.
+            </p>
+        </div>
+    </section>
+
+    <section class="practice-card">
+        <h2>4. Increase a Counter</h2>
+
+        <p>
+            Number of interested visitors:
+            <strong id="visitor-count">0</strong>
+        </p>
+
+        <button
+            class="practice-button"
+            id="count-button"
+            type="button"
+        >
+            I Am Interested
+        </button>
+
+        <button id="reset-button" type="button" class="practice-button">
+            Reset
+        </button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
