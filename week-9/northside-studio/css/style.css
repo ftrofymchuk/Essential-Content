@@ -351,3 +351,143 @@ body.menu-is-open {
     }
 
 }
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: #8a5b18;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.hero-section{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background:url(https://picsum.photos/id/123/1600/500);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+}
+
+.hero-section p{
+    color: #ffffff;
+}
+
+.hero-section h1{
+    color: #ffffff;
+}
+
+.hero-effect {
+    background-color:rgba(0, 0, 0, 0.74);
+    box-shadow: 0 4px 18px rgba(45, 36, 120, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 24px 70px;
+}
+
+.content-space{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 24px 70px;
+}
+
+.cards-container {
+    display: grid;
+    flex-direction: row;
+    padding: 55px 24px 70px;
+    justify-content: space-between;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-cards {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards h2{
+    margin: 10px;
+}
+
+.main-cards p{
+    margin: 10px;
+}
+
+.main-cards:hover {
+    scale: 1.01;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+
+.card-button-primary {
+    margin: 12px;
+    padding: 3px 5px;
+    background-color: #4c3cff;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+}
+
+.card-button-primary:hover{
+    scale: 1.01;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    cursor:pointer;
+    background-color: #4135c2;
+}
+
+.card-button-secondary{
+    margin: 12px;
+    padding: 3px 5px;
+    background-color: #17152b;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+}
+
+.card-button-secondary:hover{
+    scale: 1.01;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    cursor:pointer;
+}
+
+.hero-button-secondary{
+    margin: 12px;
+    padding: 3px 5px;
+    background-color: #17152b00;
+    border-radius: 5px;
+}
+
+.hero-button-secondary:hover{
+    scale: 1.01;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    cursor:pointer;
+}
+
+.hero-button-secondary a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 48rem) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        padding: 55px 24px 70px;
+        justify-content: space-between;
+        gap: 24px;
+    }
+}
