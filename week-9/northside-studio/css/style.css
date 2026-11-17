@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -359,7 +360,7 @@ body.menu-is-open {
     font-weight: bold;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 
 .hero-section{
@@ -398,7 +399,7 @@ body.menu-is-open {
 .content-space, .cards-wrap{
     max-width: 1150px;
     margin: 0 auto;
-    padding: 55px 24px 70px;
+    padding: 55px 24px 0px;
 }
 
 .cards-container {
@@ -428,12 +429,32 @@ body.menu-is-open {
     margin: 24px 0;
 }
 
+.service-cards {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    padding: 0 0 16px 0;
+    margin: 24px 0;
+}
+
 .main-cards h2{
+    margin: 5px 15px;
+    height: 75px;
+}
+
+.service-cards h2{
     margin: 5px 15px;
 }
 
 .main-cards p{
     height: 155px;
+    margin: 5px 15px 25px;
+}
+
+.service-cards p{
     margin: 5px 15px 25px;
 }
 
@@ -580,4 +601,67 @@ form button{
         height: auto;
         justify-self: center;
     }
+}
+
+.present-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 24px 0px;
+}
+
+@media (max-width: 900px){
+    .present-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.about-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    width: 75px;
+}
+
+.about-icons{
+    width: 55px;
+}
+
+.calltoAction{
+    background-color: #17152b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 24px;
+}
+
+.calltoAction h2{
+    color: #ffffff;
+}
+
+.calltoAction p{
+    color: #dcd8f5;
+}
+
+.calltoAction-container{
+    max-width: 1200px;
+}
+
+.about-icons:hover{
+    scale: 1.05;
+    cursor:pointer;
 }
