@@ -611,6 +611,10 @@ form button{
     padding: 55px 24px 0px;
 }
 
+.present-container img{
+    border-radius: 8px;
+}
+
 @media (max-width: 900px){
     .present-container{
         display: flex;
@@ -633,7 +637,7 @@ form button{
 }
 
 .arrow{
-    width: 75px;
+    width: 60px;
 }
 
 .about-icons{
@@ -664,4 +668,15 @@ form button{
 .about-icons:hover{
     scale: 1.05;
     cursor:pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 900px){
+    .arrow{
+    transform: rotate(90deg);
+}
 }

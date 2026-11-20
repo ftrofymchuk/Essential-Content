@@ -130,7 +130,12 @@
                 <label for="Email">Email:</label>
                 <input type="email" id="email">
                 <label for="time">Time</label>
-                <input type="datetime" name="time" id="book-time">
+                <input type="datetime-local" 
+                id="meeting-time"
+                name="meeting-time"
+                value="2026-11-20T10:30"
+                min="2026-11-20T00:00"
+                max="2026-12-31T23:59"/>
                 <button type="submit" class="card-button-secondary">Book now</button>
             </form>
         </div>
